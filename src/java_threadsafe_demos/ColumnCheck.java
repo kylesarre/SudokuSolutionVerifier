@@ -3,19 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package java_threadsafe_demos;
+package sodokuverifier;
 
 /**
  *
- * @author Kyle
+ * @author kyle
  */
-public class ColumnCheck implements Runnable
+public class ColumnThread implements Runnable
 {
-
+    int column;
+    boolean possibleSolution;
+    
+    public ColumnThread(int column)
+    {
+        this.column = column;
+        possibleSolution = true;
+    }
+    
     @Override
     public void run() 
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
     
 }
